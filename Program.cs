@@ -38,7 +38,6 @@ decimal <double>
 
         static void Main(string[] args)
         {
-
             var compileResult = CompileManager.CompileString(PegString);
 
             var dotnetCoreDirectory = Path.GetDirectoryName(typeof(object).GetTypeInfo().Assembly.Location);
