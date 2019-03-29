@@ -13,4 +13,4 @@ dotnet run
 ## Development process videos
 https://youtu.be/Sfy0PELbkmc (basic example)
 
-https://youtu.be/eCi8GHj26Wk (dynamic compile branch)
+https://youtu.be/eCi8GHj26Wk (dynamic compile branch creation)
