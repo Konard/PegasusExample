@@ -12,3 +12,4 @@ dotnet run
 
 ## Development process videos
 https://youtu.be/Sfy0PELbkmc
+https://youtu.be/eCi8GHj26Wk
