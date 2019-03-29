@@ -54,17 +54,14 @@ decimal <double>
                     MetadataReference.CreateFromFile(Path.Combine(dotnetCoreDirectory, "System.Runtime.dll")))
                 .AddSyntaxTrees(CSharpSyntaxTree.ParseText(compileResult.Code));
 
+            // Debug output. In case your environment is different it may show some messages.
+            foreach (var compilerMessage in compilation.GetDiagnostics())
+                Console.WriteLine(compilerMessage);
+
             using (var ms = new MemoryStream())
             {
                 var emitResult = compilation.Emit(ms);
-
-                if (!emitResult.Success)
-                {
-                    // Debug output. In case your environment is different it may show some messages.
-                    foreach (var compilerMessage in compilation.GetDiagnostics())
-                        Console.WriteLine(compilerMessage);
-                }
-                else
+                if (emitResult.Success)
                 {
                     ms.Seek(0, SeekOrigin.Begin);
 
