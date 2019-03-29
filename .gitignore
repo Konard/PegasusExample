@@ -331,3 +331,6 @@ ASALocalRun/
 
 # Visual Studio Code
 .vscode
+
+# Generated code
+*.g.cs
