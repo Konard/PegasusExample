@@ -1,6 +1,6 @@
 # Pegasus Example
 
-Master branch contains proof of concept example of using Pegasus PEG generator configured as a MSBuild Task.
+Master branch contains proof of concept example of using [Pegasus](https://github.com/otac0n/Pegasus) PEG generator configured as a [MSBuild](https://github.com/Microsoft/msbuild) Task.
 
 If you require all in code dynamic compilation, here an example at [dynamic-compile branch](https://github.com/Konard/PegasusExample/tree/dynamic-compile)
 
