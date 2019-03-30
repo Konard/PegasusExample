@@ -9,12 +9,8 @@
     <PackageReference Include="Pegasus" Version="4.1.0-alpha0152" />
   </ItemGroup>
 
-  <Target Name="CompilePegGrammar" BeforeTargets="BeforeBuild"  >
-    <CompilePegGrammar InputFiles="./Test.peg" OutputFiles="./Test.peg.g.cs" ></CompilePegGrammar>
-    <ItemGroup>
-      <Compile Remove="Test.peg.g.cs" />
-      <Compile Include="Test.peg.g.cs" />
-    </ItemGroup>
-  </Target>
+  <ItemGroup>
+    <PegGrammar Include="Test.peg" />
+  </ItemGroup>
 
 </Project>
