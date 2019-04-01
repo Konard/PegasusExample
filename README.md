@@ -6,17 +6,17 @@ Master branch contains proof of concept example of using [Pegasus](https://githu
 
 If you require all in code dynamic compilation, here an example at [dynamic-compile branch](https://github.com/Konard/PegasusExample/tree/dynamic-compile)
 
-### Setup
+## Setup
 Requires .NET Core 2.2 SDK and Runtime.
 
 https://dotnet.microsoft.com/download
 
-### Run
+## Run
 ```
 dotnet run
 ```
 
-### CompilePegGrammar Task
+## CompilePegGrammar Task
 
 If you need to have more control over parsers' compilation than you might need to use CompilePegGrammar:
 
